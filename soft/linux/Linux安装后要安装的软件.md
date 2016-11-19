@@ -219,4 +219,44 @@ apt-get install git
 
 4. 设置用户信息
 
-   ​
+   在把本项目上传到github之前还需要分别输入设置username和email，因为github每次commit都会记录他们。所以分别输入如下命令：
+
+   ```shell
+   $ git config --global user.name "your name"
+   $ git config --global user.email "your_email@youremail.com"
+   ```
+
+5. 添加远程地址
+
+   在与github连接成功后，如何才能让相应的项目上传到对应的仓库呢？这里就需要添加远程地址，从而让我们的本地项目顺利到达对应的仓库。
+
+   ```shell
+   $ git remote add origin git@github.com:yourName/yourRepo.git
+   ```
+
+6. 上传项目
+
+   1. 进入项目，在终端运行
+
+      ```shell
+      $ git status
+      ```
+
+      查看要上传的文件是否正确。
+
+   2. 然后将项目下的所有文件添加到git跟踪范围。
+
+      ```shell
+      $ git add .
+      ```
+
+   3. 记录此次提交并上传
+
+      ```shell
+      $ git commit -m 'my project push'
+      $ git push origin master
+      ```
+
+      这里的**master**指的是主分支名，如果是其他分支，则填写相应的分支名。
+
+      这样我们就将我们的项目上传到github仓库。
