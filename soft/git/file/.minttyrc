@@ -1,0 +1,16 @@
+BoldAsFont=no
+FontHeight=14
+Term=xterm
+Columns=92
+Rows=35
+ForegroundColour=0,128,64
+CursorColour=64,128,128
+Locale=C
+Charset=UTF-8
+Transparency=off
+OpaqueWhenFocused=no
+BackgroundColour=206,206,206
+CursorType=line
+FontSmoothing=partial
+BackspaceSendsBS=yes
+CtrlAltIsAltGr=yes
